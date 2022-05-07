@@ -6,6 +6,8 @@ This userscript allow to indicate strongly wether or not a Github repository is 
 
 - [x] Indicate in green or red (+ bold) wether a repository is open-source or not in Github (search, user homepage, user repositories)
 
+![Example](assets/example.PNG "example")
+
 ## Developer
 
 ### TODO
