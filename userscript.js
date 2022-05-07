@@ -36,18 +36,26 @@ function annotateRepositories() {
 }
 
 function annotateBoxRow() {
-  const nodeList = document.querySelectorAll('.Box-row');
-
-    if (nodeList) {
-      for (let i = 0; i < nodeList.length; i++) {
-        let licenseNode = nodeList[i].querySelector('.octicon-law');
-        if (licenseNode) {
-          annotateOpenSource(nodeList[i]);
-        } else {
-          annotateNotOpenSource(nodeList[i]);
-        }
-      }
+  console.log("annotate box-row")
+  let nodeList = document.querySelectorAll('.Box-row');
+  
+  if (!nodeList || nodeList.length === 0) {
+    console.log("toto");
+    // Info : Github element is different if you list your own repository
+    nodeList = document.querySelectorAll('li.public');
+    if (!nodeList || nodeList.length === 0) {
+      return
     }
+  }
+
+  for (let i = 0; i < nodeList.length; i++) {
+    let licenseNode = nodeList[i].querySelector('.octicon-law');
+    if (licenseNode) {
+      annotateOpenSource(nodeList[i]);
+    } else {
+      annotateNotOpenSource(nodeList[i]);
+    }
+  }
 }
 
 function annotateRepoListItem() {
@@ -71,6 +79,8 @@ function annotateRepoListItem() {
             case 'Apache-2.0 license':
             case 'BSD-3-Clause license':
             case 'CC0-1.0 license':
+            case 'GNU Affero General Public License v3.0':
+            case 'Other':
               isOpenSource = true;
               console.log('OK')
               break;
