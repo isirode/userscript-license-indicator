@@ -8,6 +8,15 @@ This userscript allow to indicate strongly wether or not a Github repository is 
 
 ![Example](assets/example.PNG "example")
 
+- [ ] Licenses
+  - [x] 'MIT license'
+  - [x] 'GPL-3.0 license'
+  - [x] 'Apache-2.0 license'
+  - [x] 'BSD-3-Clause license'
+  - [x] 'CC0-1.0 license'
+  - [x] 'GNU Affero General Public License v3.0'
+  - [ ] 'Unlicense license'
+
 ## Developer
 
 ### TODO
