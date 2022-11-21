@@ -16,6 +16,7 @@ This userscript allow to indicate strongly wether or not a Github repository is 
   - [x] 'CC0-1.0 license'
   - [x] 'GNU Affero General Public License v3.0'
   - [ ] 'Unlicense license'
+  - [ ] BSD-2-Clause license
 
 ## Developer
 
