@@ -19,6 +19,7 @@ This userscript allow to indicate strongly wether or not a Github repository is 
   - [ ] 'BSD-2-Clause license'
   - [ ] 'LGPL-2.1 license'
   - [ ] 'AGPL-3.0 license'
+  - [ ] 'GNU Lesser General Public License v3.0'
 
 ## Developer
 
